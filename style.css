@@ -8,30 +8,51 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(135deg, #191714, #2234ae);
+  background: var(--secondary-color);
   padding: 10px;
 }
 
 .todo-app {
   width: 100%;
   max-width: 540px;
-  background: #fff;
+  background: var(--secondary-color);
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--primary-color);
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
 }
 
 .todo-app h1 {
+  color: var(--primary-color);
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.todo-app img {
+  width: 30px;
+  margin-left: 280px;
+}
+
+:root {
+  --primary-color: #191919;
+  --secondary-color: #fff;
+  --third-color: rgb(226, 226, 226);
+}
+
+.dark-theme {
+  --primary-color: #fff;
+  --secondary-color: #191919;
+  --third-color: rgb(37, 37, 37);
 }
 
 .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(199, 197, 197);
+  background: var(--third-color);
   border-radius: 30px;
   padding-left: 20px;
   margin-bottom: 25px;
@@ -42,6 +63,7 @@ input {
   border: none;
   outline: none;
   background: transparent;
+  color: var(--primary-color);
   padding: 20px;
   font-weight: 14px;
 }

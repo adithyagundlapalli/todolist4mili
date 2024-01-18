@@ -41,3 +41,20 @@ function showTask(){
 }
 
 showTask();
+
+
+
+
+
+const icon = document.getElementById("theme-icon");
+
+function themeSwitch() {
+    document.body.classList.toggle("dark-theme");
+    console.log("Theme switch function called!");
+
+    if (document.body.classList.contains("dark-theme")) {
+        document.getElementById("theme-icon").src = "images/sun.png";
+    } else {
+        document.getElementById("theme-icon").src = "images/moon.png";
+    }
+}
