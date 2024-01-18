@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: serif;
   box-sizing: border-box;
 }
 
@@ -10,6 +10,13 @@
   min-height: 100vh;
   background: var(--secondary-color);
   padding: 10px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--primary-color);
 }
 
 .todo-app {
@@ -22,6 +29,7 @@
   margin: 100px auto 20px;
   padding: 40px 30px 70px;
   border-radius: 10px;
+  position: relative; /* Add relative positioning */
 }
 
 .todo-app h1 {

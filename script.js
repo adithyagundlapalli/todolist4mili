@@ -54,6 +54,8 @@ function themeSwitch() {
 
     if (document.body.classList.contains("dark-theme")) {
         document.getElementById("theme-icon").src = "images/sun.png";
+        updateUncheckedImage("images/whiteunchecked.png");
+
     } else {
         document.getElementById("theme-icon").src = "images/moon.png";
     }
