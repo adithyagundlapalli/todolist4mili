@@ -48,12 +48,14 @@
   --primary-color: #191919;
   --secondary-color: #fff;
   --third-color: rgb(226, 226, 226);
+  --background-image: url(images/unchecked.png);
 }
 
 .dark-theme {
   --primary-color: #fff;
   --secondary-color: #191919;
   --third-color: rgb(37, 37, 37);
+  --background-image: url(images/whiteunchecked.png);
 }
 
 .row {
@@ -103,7 +105,7 @@ ul li::before {
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url(images/unchecked.png);
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
   top: 8px;
